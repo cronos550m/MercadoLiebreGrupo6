@@ -29,17 +29,19 @@ Mis compras */
 
 
 .header-container {
-    display: grid;
+    background-color: #EAC926;
     position: fixed;
     width: 100%;
     height: 130px;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
     gap: 0px 0px;
-    grid-template-areas: 
-        "log search ."
-        "text ."
-        "burger";
+    grid-auto-flow: row;
+    grid-template-areas:
+        "logo buscador"
+        "eslogan eslogan"
+        "hamburger hamburger";
 }
 
 .header-logo {
@@ -52,24 +54,22 @@ Mis compras */
 }
 
 .header-logo-container {
-    width: 50%;
+    width: 90%;
     max-width: 400px;
     height: auto;
-    /* position: relative;
-    display: flex; */
     margin: auto;
     grid-area: logo;
 }
 
 .header-search-container {
-    width: 50%;
+    width: 100%;
     max-width: 400px;
     height: auto;
     position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
-    grid-area: search;
+    grid-area: buscador;
 }
 
 .header-search-form {
@@ -97,23 +97,29 @@ Mis compras */
     background-color: #0a56a7;
     color: #ffffff;
     display: block;
-    max-width: 50px;
-    padding: 9px;
-    padding-left: 11px;
+    max-width: 36px;
+    padding: 8px;
+    padding-left: 10px;
     padding-right: 11px;
     border-radius: 4px;
     text-align: center;
     font-size: 17px;
-    margin-left: 18px;
-    margin-top: 2px;
+    max-height: 34px;
 }
 
 .header-burger-container {
-    grid-area: burger;
+    grid-area: hamburger;
+    justify-content: center;
+    align-items: center;
+    display: flex;
 }
 
 .header-container-text {
     width: 100%;
+    grid-area: eslogan;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .header-hand-text {
@@ -124,3 +130,17 @@ Mis compras */
 .header-text {
 
 }
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "logo buscador"
+      "eslogan eslogan"
+      "hamburger hamburger";
+  }
+  
+  
