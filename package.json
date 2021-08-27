@@ -1,0 +1,27 @@
+{
+  "name": "mercadoliebregrupo6",
+  "version": "1.0.0",
+  "description": "this page is made by 3 partners for the course full stack of DigitalHouse",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cronos550m/MercadoLiebreGrupo6.git"
+  },
+  "keywords": [
+    "MercadoLiebre",
+    "DH",
+    "digitalHouse"
+  ],
+  "author": "Itati, Luciano y Sergio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cronos550m/MercadoLiebreGrupo6/issues"
+  },
+  "homepage": "https://github.com/cronos550m/MercadoLiebreGrupo6#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
