@@ -32,8 +32,9 @@ Mis compras */
     background-color: #EAC926;
     position: fixed;
     width: 100%;
-    height: 130px;
+    height: 178px;
     display: grid;
+    padding-top: 9px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 2fr 2fr;
     gap: 0px 0px;
@@ -54,10 +55,8 @@ Mis compras */
 }
 
 .header-logo-container {
-    width: 90%;
+    width: 100%;
     max-width: 400px;
-    height: auto;
-    margin: auto;
     grid-area: logo;
 }
 
@@ -82,15 +81,21 @@ Mis compras */
 .header-search-input {
     width: 90%;
     height: 37px;
+    border-radius: 5px;
+    border: none;
+    padding-left: 13px;
+    font-size: 14px;
+    font-weight: bold;
 }
 
 .header-search-button {
-    width: 25px;
-    right: 27px;
+    width: 32px;
+    right: 31px;
     position: relative;
+    bottom: -2px;
     border-radius: 62%;
     background-color: white;
-    border-color: white;
+    border: none;
 }
 
 .hamburger-button {
@@ -120,6 +125,8 @@ Mis compras */
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 13px;
+    font-weight: 900;
 }
 
 .header-hand-text {
